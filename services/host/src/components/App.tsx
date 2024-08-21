@@ -1,7 +1,6 @@
 import cl from '@/sass/App.module.sass'
 import { sum } from '@packages/shared/src/index'
 import React from 'react'
-import 'j'
 import { Outlet } from 'react-router-dom'
 
 function App() {
