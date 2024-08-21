@@ -9,7 +9,7 @@
     "build:mobile": "webpack --env mode=production --env platform=mobile",
     "build:desktop": "webpack --env mode=production --env platform=desktop",
     "typecheck": "tsc",
-    "lint" : "npx ts-node eslint.config.js"
+    "lint": "npx ts-node eslint.config.js"
   },
   "dependencies": {
     "@packages/build-config": "*",
@@ -43,6 +43,7 @@
     "globals": "^15.9.0",
     "html-webpack-plugin": "^5.6.0",
     "jest": "^29.7.0",
+    "jiti": "^1.21.6",
     "mini-css-extract-plugin": "^2.9.0",
     "react-refresh": "^0.14.2",
     "react-refresh-typescript": "^2.0.9",

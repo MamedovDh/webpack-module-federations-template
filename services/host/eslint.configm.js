@@ -4,7 +4,7 @@ import globals from "globals"
 import tseslint from "typescript-eslint"
 
 
-export default [
+module.exports = [
   {files: ["**/*.{js,cjs,ts,jsx,tsx}"]},
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
