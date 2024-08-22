@@ -6,10 +6,10 @@ const routes = [
 		path: "/shop",
 		element: <App />,
 		// children: [
-		// 	{
-		// 		path: '/about',
-		// 		element: <Suspense fallback={'Loading...'}>{/* enter a page lazy component*/}</Suspense>
-		// 	},
+			// {
+			// 	path: '/about',
+			// 	element: <Suspense fallback={'Loading...'}>{/* enter a page lazy component*/}</Suspense>
+			// },
 		// ]
 	},
 ]

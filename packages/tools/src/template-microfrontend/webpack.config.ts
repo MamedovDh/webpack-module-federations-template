@@ -26,7 +26,7 @@ export default (env : EnvVariable) => {
 	})
 
 	config.plugins.push(new webpack.container.ModuleFederationPlugin({
-		name: 'admin',
+		name: 'template',
 		filename: 'remoteEntry.js',
 		exposes: {
 			'./Router': './src/router/Router.tsx',

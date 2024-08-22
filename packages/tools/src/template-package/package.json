@@ -1,0 +1,15 @@
+{
+  "name": "@packages/template",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "scripts": {
+    "mkmf": "ts-node ./src/create-microfrontend.ts",
+    "mkp": "ts-node ./src/create-package.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2"
+  }
+}

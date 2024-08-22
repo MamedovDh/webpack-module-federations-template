@@ -1,8 +1,6 @@
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
-import CopyPlugin from 'copy-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import path from 'path'
 import webpack, { Configuration, DefinePlugin } from 'webpack'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 import { BuildOptions } from './types/types'
@@ -34,11 +32,11 @@ export const buildPlugins = ({ mode, paths, analyzer, platform}: BuildOptions): 
 			filename: 'css/[name].[contenthash:8].css',
 			chunkFilename: 'css/[name].[contenthash:8].css',
 		}))
-		plugins.push(new CopyPlugin({
-			patterns : [
-				{from : path.resolve(paths.public, 'locales'), to : path.resolve(paths.output, 'locales')}
-			]
-		}))
+		// plugins.push(new CopyPlugin({
+		// 	patterns : [
+		// 		{from : path.resolve(paths.public, 'locales'), to : path.resolve(paths.output, 'locales')}
+		// 	]
+		// }))
 	}
 
 	if (analyzer) {
