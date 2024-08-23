@@ -1,9 +1,20 @@
+
 declare module '*.module.sass' {
   interface IClassNames {
     [className: string]: string
   }
   const classNames: IClassNames;
   export = classNames;
+}
+
+declare module '*/Router' {
+  type Route = {
+    path : '',
+    element : JSX.Element,
+    children ?: Route[]
+  }
+  const routes: Route[];
+  export = routes;
 }
 
 declare module '*.png';
